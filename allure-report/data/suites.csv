@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5735","HackerRank neg Login Test","","Mon Aug 26 11:00:07 PDT 2024","passed","Mon Aug 26 11:00:13 PDT 2024","","HackerRank.spec.js","",""
+"","21502","HackerRank Login Test","","Mon Aug 26 10:59:44 PDT 2024","passed","Mon Aug 26 11:00:06 PDT 2024","","HackerRank.spec.js","",""
+"","19293","Product Shopping Test","","Mon Aug 26 12:20:51 PDT 2024","passed","Mon Aug 26 12:21:11 PDT 2024","","RahulshettyPOM.spec.js","",""

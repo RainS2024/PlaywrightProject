@@ -1,0 +1,21 @@
+{
+  "name": "playwright-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test tests/HackerRank.spec.js TestFunctions.spec.js",
+    "Rahulshetty": "npx playwright test RahulshettyPOM.spec.js --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0",
+    "allure-playwright": "^3.0.0-beta.10"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

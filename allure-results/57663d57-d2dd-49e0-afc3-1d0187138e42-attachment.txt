@@ -1,0 +1,11 @@
+Let's Shop
+[ 'ZARA COAT 3', 'ADIDAS ORIGINAL', 'IPHONE 13 PRO' ]
+3
+Automation
+[ '#6581cade9fd99c85e8ee7ff5', '#6581ca399fd99c85e8ee7f45' ]
+2
+true
+#6581cade9fd99c85e8ee7ff5
+ Thankyou for the order. 
+ | 66ccd5a7ae2afd4c0b5a8785 | 
+7
