@@ -79,7 +79,7 @@ test('Split and Extract Test', async ({ browser }) => {
 
 })
 
-test.only('Playwright special locators', async ({ page }) => {
+test('Playwright special locators', async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/angularpractice/");
     await page.getByLabel("Check me out if you Love IceCreams!").check();
     await page.getByText("Employed").check();
@@ -93,3 +93,31 @@ test.only('Playwright special locators', async ({ page }) => {
     await page.getByRole("link", { name:"Shop"}).click();
     //await page.locator('card h-100').filter({hasText:'Samsung Note 8'}).getByRole("button").click();
 }); 
+
+test.only ('Date Picking Calender', async ({ page }) => {
+    const selectYear= "2025"
+    const selectMonth = "November"
+    const selectDate = "24"
+    const expectedDate = [selectMonth,selectDate,selectYear] // array of [mm,dd,yy] to validate
+    const Year = page.getByText(selectYear);
+    const Month = page.getByText(selectMonth);
+    const Date=page.locator("//abbr[text()='"+selectDate+"']")//XPATH AS LOCATOR STATEGY HERE TO GET THE UNIQUE ELEMENT
+    const DatePicked=page.locator('input.react-date-picker__inputGroup__input');
+    await page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers"); 
+    await page.locator("div .react-date-picker__inputGroup").click();
+    await page.locator(".react-calendar__navigation__label__labelText ").click();
+    await page.locator(".react-calendar__navigation__label__labelText ").click();
+    await Year.click();
+    await Month.click();
+    await Date.click();
+    //for loop to iterate through the date picked and validate with the values in te array of expected date.
+    // 3 different elemenst in the date which we are iterating toygh for loop. 
+    //picks up month first and validates with the value in the array.
+    //picks up date nest and validates with the value in the array.
+    //pick up year last and validate with the value in the array.
+    for(let i=0;i<DatePicked.length;i++){
+        const value= await DatePicked.getAttribute('Value');
+        expect (value).toEqual(expectedDate[i]);
+    }
+    
+});

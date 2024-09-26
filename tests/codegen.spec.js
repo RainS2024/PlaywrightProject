@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('SFtest', async ({ page }) => {
+test('@Web SFtest', async ({ page }) => {
   await page.goto('https://rainbowltd-dev-ed.develop.my.salesforce.com/');
   await page.getByLabel('Username').click({
     button: 'right'
