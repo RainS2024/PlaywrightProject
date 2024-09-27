@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "regression": "npx playwright test tests/HackerRank.spec.js TestFunctions.spec.js",
+    "regression": "npx playwright test tests/HackerRank.spec.js tests/TestFunctions.spec.js",
     "Rahulshetty": "npx playwright test RahulshettyPOM.spec.js --reporter=line,allure-playwright"
   },
   "keywords": [],
